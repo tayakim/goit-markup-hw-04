@@ -1,0 +1,485 @@
+:root {
+    --primery-white-color: #ffffff;
+    --background-hero: #2F303A;
+    --background-team: #F5F4FA;
+    --background-specialisations: #E5E5E5;
+    --background-footer: #2F303A;
+    --background-portfolio: #F5F4FA;
+    --blue-color: #2196F3;
+    --font-black: #212121;
+    --font-grey: #757575;
+    --font-white: #FFFFFF;
+}
+
+body {
+    color: var(--font-black);
+    background-color: var(--primery-white-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+
+/*========== Стили для странички index.html ==========*/
+
+
+/* Утилиты */
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flexin {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    color: var(--font-black);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo .blue {
+    color: var(--blue-color);
+}
+
+.logo .white {
+    color: var(--font-white);
+}
+
+.pages {
+    display: flex;
+    margin-left: 93px;
+}
+
+.pages .pages-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--font-black);
+    text-decoration: none;
+}
+
+.site-nav .link.current {
+    color: var(--blue-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--blue-color);
+}
+
+.pages,
+.contacts-head {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-first {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-first .pages-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-first .contacts-now {
+    color: var(--font-grey);
+    text-decoration: none;
+}
+
+.contacts-first .current {
+    color: var(--blue-color);
+}
+
+.contacts-first .contacts-now:hover,
+.contacts-first .contacts-now:focus {
+    color: var(--blue-color);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 80px;
+    border: 1px solid #ECECEC;
+}
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--font-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    background-color: var(--background-hero);
+}
+
+.hero .hero-button {
+    display: flex;
+    display: inline-block;
+    padding: 10px 32px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    color: var(--font-white);
+    background-color: var(--blue-color);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.8;
+    /* text-decoration: none; */
+    border: 1px solid transparent;
+    width: 200px;
+    height: 50px;
+}
+
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-container {
+    display: flex;
+}
+
+.features-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-card {
+    width: calc((100% - 90px) / 4);
+}
+
+
+/* .card {
+    justify-content: space-between;
+} */
+
+.features-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.features .features-subtitle {
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features .features-description {
+    margin-top: 0;
+    color: var(--font-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.specialisations {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-specialisations);
+}
+
+.specialisations-container {
+    display: flex;
+}
+
+.specialisations-img:not(:last-child) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.specialisations-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-card {
+    width: calc((100% - 90px) / 4);
+}
+
+.team-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team .team-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.specialisations .specialisations-title,
+.team .team-title {
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.team-img {
+    margin-bottom: 30px;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-team);
+}
+
+.team .team-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--font-black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team .team-prof {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--font-grey);
+}
+
+
+/* Стили для footer */
+
+.contacts-footer {
+    background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-city,
+.footer-email {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-phone {
+    margin-top: 0;
+}
+
+.contacts .contacts-address {
+    color: var(--font-white);
+}
+
+.contacts .contacts-email,
+.contacts .contacts-phone {
+    color: var(--font-grey);
+    text-decoration: none;
+}
+
+.no-margin {
+    margin-top: 0;
+}
+
+
+/*======== Стили для странички portfolio.html =========*/
+
+
+/* Кнопки */
+
+.buttons-list {
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    justify-content: center;
+}
+
+
+/* устанавляваем margin всем, кроме последней */
+
+
+/* Устанавливаем marginßright всем кнопкам, кроме последней */
+
+.buttons-list .button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.buttons-title,
+.works-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.filter-block {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.filter-block .buttons-link {
+    color: var(--font-black);
+    background-color: var(--background-portfolio);
+    font-family: inherit;
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.filter-block .buttons-link:hover,
+.filter-block .buttons-link:focus {
+    color: var(--font-white);
+}
+
+.filter-block .buttons-link:hover,
+.filter-block .buttons-link:focus {
+    background-color: var(--blue-color);
+}
+
+.filter-block .button-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* Стили для портфолио */
+
+.works {
+    padding-bottom: 94px;
+}
+
+.works-card {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 30px; */
+}
+
+.works-card-elem {
+    width: calc((100% - 60px) / 3);
+}
+
+
+/* Каждый третий элемент без margin */
+
+.works-card-elem:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* Три последних элемента с margin-bottom */
+
+
+/* .works-card-elem:nth-last-child(-n + 3) {
+    margin-bottom: 94px;
+} */
+
+
+/* Все кроме 3,6,9 имеют margin справа */
+
+.works-card-elem:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.works .works-title {
+    margin-top: 0;
+}
+
+.container-works {
+    display: block;
+    /* margin-bottom: 0; */
+}
+
+.works .works-subtitle {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.works .works-type {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--font-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.works .works-link {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-content {
+    /* width: calc((100% - 60px) / 3); */
+    /* width: 370px; */
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
