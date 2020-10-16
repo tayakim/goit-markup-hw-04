@@ -94,7 +94,7 @@ body {
 }
 
 .pages,
-.contacts-head {
+.contacts-first {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -133,21 +133,29 @@ body {
 }
 
 .hero {
-    padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     letter-spacing: 0.06em;
 }
 
+.hero-bg {
+    content: "";
+    display: inline-block;
+    width: 1600px;
+    height: 600px;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-position: center;
+    background-image: url("../images/Header1.jpg");
+}
+
 .hero .hero-title {
-    margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
     color: var(--font-white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
-    background-color: var(--background-hero);
 }
 
 .hero .hero-button {
@@ -169,7 +177,7 @@ body {
 }
 
 .features {
-    padding-top: 94px;
+    /* padding-top: 94px; */
     padding-bottom: 94px;
 }
 
@@ -185,10 +193,33 @@ body {
     width: calc((100% - 90px) / 4);
 }
 
+.features-card::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #F5F4FA;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 
-/* .card {
-    justify-content: space-between;
-} */
+.icon-first::before {
+    background-image: url("../images/svg/antenna.svg");
+}
+
+.icon-second::before {
+    background-image: url("../images/svg/clock.svg");
+}
+
+.icon-third::before {
+    background-image: url("../images/svg/diagram.svg");
+}
+
+.icon-fourth::before {
+    background-image: url("../images/svg/astronaut.svg");
+}
 
 .features-title {
     margin-top: 0;
@@ -261,7 +292,7 @@ body {
 }
 
 .team-img {
-    margin-bottom: 30px;
+    display: block;
 }
 
 .team {
@@ -271,8 +302,9 @@ body {
 }
 
 .team .team-name {
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 10px;
+    padding-top: 30px;
     color: var(--font-black);
     font-weight: 500;
     font-size: 16px;
@@ -286,6 +318,50 @@ body {
     font-size: 16px;
     line-height: 1.18;
     color: var(--font-grey);
+}
+
+.team-content {
+    /* display: flexbox; */
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 30px;
+    margin-top: 0; */
+}
+
+
+/* Оформление иконок- соц сетей */
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.social-list-link svg {
+    width: 32px;
+    height: 32px;
+}
+
+.social-list-link:hover {
+    background-color: var(--blue-color);
+}
+
+.social-list-link:hover svg {
+    fill: var(--font-black);
 }
 
 

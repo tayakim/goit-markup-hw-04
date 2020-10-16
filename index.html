@@ -29,8 +29,9 @@
             </nav>
 
 
-            <ul class="list contacts-first contacts-head">
+            <ul class="list contacts-first icon-header">
                 <li class="pages-item">
+
                     <a href="mailto:info@devstudio.com" class="contacts-now">info@devstudio.com</a>
                 </li>
 
@@ -46,7 +47,7 @@
     <main>
         <!--Герой-->
         <section class="hero">
-            <div class="container">
+            <div class="container hero-bg">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button">Заказать услугу</button>
             </div>
@@ -59,22 +60,22 @@
             <div class="container ">
                 <h2 class="features-title hidden">Что нас выделяет на фоне остальных:</h2>
                 <ul class="list features-container">
-                    <li class="features-card">
+                    <li class="features-card icon-first">
                         <h3 class="features-subtitle">Внимание к деталям</h3>
                         <p class="features-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
 
-                    <li class="features-card">
+                    <li class="features-card icon-second">
                         <h3 class="features-subtitle">Пунктуальность</h3>
                         <p class="features-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
 
-                    <li class="features-card">
+                    <li class="features-card icon-third">
                         <h3 class="features-subtitle">Планирование</h3>
                         <p class="features-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
 
-                    <li class="features-card">
+                    <li class="features-card icon-fourth">
                         <h3 class="features-subtitle">Современные технологии</h3>
                         <p class="features-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -112,27 +113,65 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-card">
-                        <div class="team-img"><img src="./images/team1.jpg" width="270" alt="наш дизайнер"></div>
-                        <h3 class="team-name">Игорь Демьяненко</h3>
-                        <p class="team-prof">Product Designer</p>
+                        <img class="team-img" src="./images/team1.jpg" width="270" alt="наш дизайнер">
+                        <div class="team-content">
+                            <h3 class="team-name">Игорь Демьяненко</h3>
+                            <p class="team-prof">Product Designer</p>
+                            <ul class="list social-list">
+                                <li>
+                                    <a href="" class="social-list-link">
+                                        <svg>
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-list-link ">
+                                        <svg class="social-list__svg">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-list-link ">
+                                        <svg class="social-list__svg">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="social-list-link ">
+                                        <svg class="social-list__svg">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
                     <li class="team-card">
-                        <div class="team-img"><img src="./images/team2.jpg" width="270" alt="наш фронтэнд девелопер"></div>
-                        <h3 class="team-name">Ольга Репина</h3>
-                        <p class="team-prof">Frontend Developer</p>
+                        <img class="team-img" src="./images/team2.jpg" width="270" alt="наш фронтэнд девелопер">
+                        <div class="team-content">
+                            <h3 class="team-name">Ольга Репина</h3>
+                            <p class="team-prof">Frontend Developer</p>
+                        </div>
                     </li>
 
                     <li class="team-card">
-                        <div class="team-img"><img src="./images/team3.jpg" width="270" alt="наш маркетолог"></div>
-                        <h3 class="team-name">Николай Тарасов</h3>
-                        <p class="team-prof">Marketing</p>
+                        <img class="team-img" src="./images/team3.jpg" width="270" alt="наш маркетолог">
+                        <div class="team-content">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p class="team-prof">Marketing</p>
+                        </div>
                     </li>
 
                     <li class="team-card">
-                        <div class="team-img"><img src="./images/team4.jpg" width="270" alt="наш UI дизайнер"></div>
-                        <h3 class="team-name">Михаил Ермаков</h3>
-                        <p class="team-prof">UI Designer</p>
+                        <img class="team-img" src="./images/team4.jpg" width="270" alt="наш UI дизайнер">
+                        <div class="team-content">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p class="team-prof">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
