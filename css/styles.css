@@ -127,6 +127,7 @@ body {
 .envelope svg {
     width: 16px;
     height: 12px;
+    background: #757575;
     /* margin-right: 10px; */
 }
 
@@ -134,6 +135,7 @@ body {
     width: 10px;
     height: 16px;
     margin-left: 0px;
+    background: #757575;
 }
 
 .envelope:hover svg {
