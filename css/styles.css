@@ -374,6 +374,7 @@ body {
 .social-list-link svg {
     width: 20px;
     height: 20px;
+    background: #AFB1B8;
 }
 
 .social-list-link:hover {
