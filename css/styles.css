@@ -451,6 +451,10 @@ body {
     margin-top: 20px;
 }
 
+.social-link-footer:hover {
+    background-color: var(--blue-color);
+}
+
 
 /*======== Стили для странички portfolio.html =========*/
 
