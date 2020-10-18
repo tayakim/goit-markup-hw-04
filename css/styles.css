@@ -136,6 +136,11 @@ body {
     margin-left: 0px;
 }
 
+.phone:hover,
+.envelope:hover {
+    background-color: var(--blue-color);
+}
+
 .line {
     position: absolute;
     width: 100%;
