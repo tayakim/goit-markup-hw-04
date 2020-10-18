@@ -135,18 +135,16 @@ body {
     width: 10px;
     height: 16px;
     margin-left: 0px;
-    background: #757575;
+    fill: #757575;
 }
 
 .envelope:hover svg {
     fill: var(--blue-color);
 }
 
-
-/* .phone:hover,
-.envelope:hover {
+.phone:hover svg {
     fill: var(--blue-color);
-} */
+}
 
 .line {
     position: absolute;
