@@ -582,9 +582,7 @@ body {
     fill: var(--blue-color);
 }
 
-.clients-link svg {
-    fill: #AFB1B8;
-}
+.clients-link svg {}
 
 .clients-svg {
     display: flex;
@@ -598,7 +596,8 @@ body {
 
 .cleint-size {
     width: 88.48px;
-    height: 45.44px
+    height: 45.44px;
+    fill: #AFB1B8;
 }
 
 .cleint-size:hover {
