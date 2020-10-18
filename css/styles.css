@@ -138,7 +138,7 @@ body {
 
 .phone:hover,
 .envelope:hover {
-    color: var(--blue-color);
+    fill: var(--blue-color);
 }
 
 .line {
