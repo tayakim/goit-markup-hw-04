@@ -526,9 +526,13 @@ body {
     fill: var(--blue-color);
 }
 
-.cleint-six {
+.cleint-size {
     width: 88.48px;
     height: 45.44px
+}
+
+.cleint-size:hover {
+    fill: var(--blue-color);
 }
 
 
