@@ -584,6 +584,10 @@ body {
     fill: var(--blue-color);
 }
 
+.clients-link svg {
+    fill: #AFB1B8;
+}
+
 .clients-svg {
     display: flex;
     justify-content: center;
