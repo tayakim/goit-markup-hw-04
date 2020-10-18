@@ -361,7 +361,12 @@ body {
     background-color: var(--blue-color);
 }
 
-.social-list-link:hover svg {
+
+/* .social-list-link:hover {
+    fill: var(--font-white);
+} */
+
+.social-list__link:hover .social-list__svg {
     fill: var(--font-white);
 }
 
