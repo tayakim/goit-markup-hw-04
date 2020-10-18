@@ -136,6 +136,10 @@ body {
     margin-left: 0px;
 }
 
+.envelope:hover svg {
+    fill: var(--blue-color);
+}
+
 
 /* .phone:hover,
 .envelope:hover {
@@ -381,11 +385,6 @@ body {
     background-color: var(--blue-color);
     fill: var(--font-white);
 }
-
-
-/* .social-list-link:hover {
-    fill: var(--font-white);
-} */
 
 .social-list-link:hover svg {
     fill: var(--font-white);
