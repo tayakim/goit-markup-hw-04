@@ -379,6 +379,7 @@ body {
 
 .social-list-link:hover {
     background-color: var(--blue-color);
+    fill: var(--font-white);
 }
 
 
