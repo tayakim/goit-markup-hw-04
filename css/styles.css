@@ -522,6 +522,10 @@ body {
     align-items: center;
 }
 
+.clients-svg:hover {
+    fill: var(--blue-color);
+}
+
 
 /* Стили для портфолио */
 
