@@ -499,6 +499,9 @@ body {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clients-card:not(:last-child) {
