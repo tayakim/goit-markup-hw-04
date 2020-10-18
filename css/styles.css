@@ -513,6 +513,12 @@ body {
     fill: var(--blue-color);
 }
 
+.clients-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Стили для портфолио */
 
