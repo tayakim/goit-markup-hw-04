@@ -127,7 +127,7 @@ body {
 .envelope svg {
     width: 16px;
     height: 12px;
-    background: #757575;
+    fill: #757575;
     /* margin-right: 10px; */
 }
 
