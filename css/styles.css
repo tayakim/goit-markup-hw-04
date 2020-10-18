@@ -414,6 +414,38 @@ body {
     margin-top: 0;
 }
 
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.follow {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.general {
+    display: flex;
+}
+
+.follow-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--font-white);
+}
+
+.follow-list {
+    margin-top: 20px;
+}
+
 
 /*======== Стили для странички portfolio.html =========*/
 
@@ -485,6 +517,11 @@ body {
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .clients-list {
