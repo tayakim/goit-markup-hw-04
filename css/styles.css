@@ -103,6 +103,7 @@ body {
 .contacts-first {
     display: flex;
     margin-left: auto;
+    align-items: baseline;
 }
 
 .contacts-first .pages-item:not(:last-child) {
