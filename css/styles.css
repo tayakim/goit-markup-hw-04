@@ -123,6 +123,11 @@ body {
     color: var(--blue-color);
 }
 
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+
 .line {
     position: absolute;
     width: 100%;
