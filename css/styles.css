@@ -129,12 +129,11 @@ body {
     margin-right: 10px;
 }
 
-
-/* .phone svg {
+.phone svg {
     width: 10px;
     height: 16px;
-    margin-right: 10px;
-} */
+    /* margin-left: 0px; */
+}
 
 .line {
     position: absolute;
