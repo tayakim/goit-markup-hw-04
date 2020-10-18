@@ -283,7 +283,8 @@ body {
 }
 
 .specialisations .specialisations-title,
-.team .team-title {
+.team .team-title,
+.clients-title {
     color: var(--font-black);
     font-weight: 700;
     font-size: 36px;
@@ -352,8 +353,8 @@ body {
 }
 
 .social-list-link svg {
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
 }
 
 .social-list-link:hover {
@@ -361,7 +362,7 @@ body {
 }
 
 .social-list-link:hover svg {
-    fill: var(--font-black);
+    fill: var(--font-white);
 }
 
 
@@ -471,6 +472,40 @@ body {
 .filter-block .button-item {
     display: inline-block;
     text-decoration: none;
+}
+
+
+/* Наши клиенты  */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-card {
+    width: calc((100% - 150px) / 6);
+    height: 90px;
+    /* left: 215px;
+    top: 2493px; */
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-card:hover {
+    border-color: var(--blue-color);
+}
+
+.clients-link:hover svg {
+    fill: var(--blue-color);
 }
 
 
