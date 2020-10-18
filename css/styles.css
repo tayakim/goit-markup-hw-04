@@ -387,7 +387,7 @@ body {
     fill: var(--font-white);
 } */
 
-.social-list-link:hover .social-list__svg {
+.social-list-link:hover svg {
     fill: var(--font-white);
 }
 
