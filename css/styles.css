@@ -424,6 +424,11 @@ body {
     border-radius: 50%;
 }
 
+.social-link-footer svg {
+    width: 20px;
+    height: 20px;
+}
+
 .follow {
     display: inline-block;
     margin-right: 10px;
