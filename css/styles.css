@@ -76,6 +76,10 @@ body {
     margin-right: 50px;
 }
 
+.pages-item {
+    font-weight: 500;
+}
+
 .site-nav .link {
     display: block;
     padding-top: 32px;
@@ -156,24 +160,20 @@ body {
 }
 
 .hero {
-    padding-bottom: 200px;
+    background-position: center;
+    /* background-color: #E5E5E5; */
+    background-image: url("../images/Header1.jpg");
+    background-repeat: no-repeat;
+    max-width: 1600;
+    display: flex;
+    margin-bottom: 94px;
     text-align: center;
     letter-spacing: 0.06em;
 }
 
-.hero-bg {
-    content: "";
-    display: inline-block;
-    width: 1600px;
-    height: 600px;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-position: center;
-    background-image: url("../images/Header1.jpg");
-}
-
 .hero .hero-title {
+    margin-top: 200px;
     margin-bottom: 30px;
-    padding-top: 200px;
     color: var(--font-white);
     font-weight: 900;
     font-size: 44px;
@@ -185,6 +185,7 @@ body {
     display: flex;
     display: inline-block;
     padding: 10px 32px;
+    margin-bottom: 200px;
     align-items: center;
     text-align: center;
     border-radius: 4px;
@@ -193,14 +194,13 @@ body {
     font-family: inherit;
     font-size: 16px;
     line-height: 1.8;
-    /* text-decoration: none; */
     border: 1px solid transparent;
     width: 200px;
     height: 50px;
+    cursor: pointer;
 }
 
 .features {
-    /* padding-top: 94px; */
     padding-bottom: 94px;
 }
 
@@ -270,7 +270,7 @@ body {
 .specialisations {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-specialisations);
+    background-color: var(--font-white);
 }
 
 .specialisations-container {
@@ -351,9 +351,6 @@ body {
     box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
-    /* padding-bottom: 20px; */
-    /* margin-bottom: 30px;
-    margin-top: 0; */
 }
 
 
@@ -456,6 +453,7 @@ body {
 
 .general {
     display: flex;
+    justify-content: flex-start;
 }
 
 .follow-text {
@@ -487,9 +485,6 @@ body {
     margin-left: auto;
     justify-content: center;
 }
-
-
-/* устанавляваем margin всем, кроме последней */
 
 
 /* Устанавливаем marginßright всем кнопкам, кроме последней */
@@ -533,11 +528,17 @@ body {
 .filter-block .buttons-link:hover,
 .filter-block .buttons-link:focus {
     background-color: var(--blue-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-block .button-item {
     display: inline-block;
     text-decoration: none;
+}
+
+.buttons-link {
+    border: 1px solid transparent;
 }
 
 
@@ -560,14 +561,13 @@ body {
 .clients-card {
     width: calc((100% - 150px) / 6);
     height: 90px;
-    /* left: 215px;
-    top: 2493px; */
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .clients-card:not(:last-child) {
@@ -578,19 +578,7 @@ body {
     border-color: var(--blue-color);
 }
 
-.clients-link:hover svg {
-    fill: var(--blue-color);
-}
-
-.clients-link svg {}
-
-.clients-svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.clients-svg:hover {
+.clients-card:hover svg {
     fill: var(--blue-color);
 }
 
@@ -598,10 +586,6 @@ body {
     width: 88.48px;
     height: 45.44px;
     fill: #AFB1B8;
-}
-
-.cleint-size:hover {
-    fill: var(--blue-color);
 }
 
 
@@ -619,6 +603,12 @@ body {
 
 .works-card-elem {
     width: calc((100% - 60px) / 3);
+    height: 404px;
+    margin-bottom: 30px;
+}
+
+.works-card-elem:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -664,7 +654,7 @@ body {
 
 .works .works-type {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: var(--font-grey);
     font-weight: 400;
     font-size: 16px;
@@ -687,6 +677,6 @@ body {
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     margin-top: 0;
 }
